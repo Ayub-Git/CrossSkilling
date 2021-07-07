@@ -1,4 +1,4 @@
-package com.example.CrossSkillDemo;
+package com.initialization;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -8,8 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableAutoConfiguration
-@ComponentScan({"com.*"})
+@ComponentScan({"com.daos","com.services","com.controllers"})
 @EnableJpaRepositories(basePackages = "com.repos")
 @EntityScan("com.model")
 public class CrossSkillDemoApplication {
