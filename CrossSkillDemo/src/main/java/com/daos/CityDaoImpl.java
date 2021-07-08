@@ -8,7 +8,7 @@ import javax.persistence.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.entity.City;
+import com.entities.City;
 import com.repos.CityRepo;
 
 @Component

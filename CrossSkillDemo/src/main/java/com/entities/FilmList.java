@@ -1,4 +1,4 @@
-package com.entity;
+package com.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -6,13 +6,13 @@ import java.math.BigDecimal;
 
 
 /**
- * The persistent class for the nicer_but_slower_film_list database table.
+ * The persistent class for the film_list database table.
  * 
  */
 @Entity
-@Table(name="nicer_but_slower_film_list")
-@NamedQuery(name="NicerButSlowerFilmList.findAll", query="SELECT n FROM NicerButSlowerFilmList n")
-public class NicerButSlowerFilmList implements Serializable {
+@Table(name="film_list")
+@NamedQuery(name="FilmList.findAll", query="SELECT f FROM FilmList f")
+public class FilmList implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Lob
@@ -34,7 +34,7 @@ public class NicerButSlowerFilmList implements Serializable {
 
 	private String title;
 
-	public NicerButSlowerFilmList() {
+	public FilmList() {
 	}
 
 	public String getActors() {

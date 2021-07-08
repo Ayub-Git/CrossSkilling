@@ -2,7 +2,7 @@ package com.daos;
 
 import java.util.List;
 
-import com.entity.City;
+import com.entities.City;
 import com.pojos.CityDTO;
 
 
