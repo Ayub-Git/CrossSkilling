@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @ComponentScan({"com.daos","com.services","com.controllers"})
 @EnableJpaRepositories(basePackages = "com.repos")
-@EntityScan("com.model")
+@EntityScan("com.entity")
 public class CrossSkillDemoApplication {
 
 	public static void main(String[] args) {
